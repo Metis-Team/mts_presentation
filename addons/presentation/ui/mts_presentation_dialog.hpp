@@ -116,7 +116,7 @@ class GVAR(dialog) {
 // 			y = "SafeZoneY + (474 / 1080) * SafeZoneH";
 // 			w = "(150 / 1920) * SafeZoneW";
 // 			h = "(40 / 1080) * SafeZoneH";
-// //			action = QUOTE(call FUNC(help););
+//   		action = QUOTE(call FUNC(help););
 // 		};
 		class title: RscText {
 			idc = -1;
