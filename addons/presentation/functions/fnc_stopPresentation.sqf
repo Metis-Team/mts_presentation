@@ -16,7 +16,7 @@
  *
  */
 
- params [["_disconnect", false , [false]]];
+ params [["_disconnect", false, [false]]];
 
 if (!_disconnect) then {
     if (hasInterface && GVAR(presenter) isEqualTo CURRENT_PLAYER) then {
