@@ -115,6 +115,8 @@ if (GVAR(previewNextSlide) && !GVAR(disablePreview)) then {
 
 TRACE_1("", _displayData);
 {
-    (_x select 0) ctrlSetPosition (_x select 1);
-    (_x select 0) ctrlCommit _commitSpeed;
+    params ["_ctrl", "_pos"];
+
+    _ctrl ctrlSetPosition _pos;
+    _ctrl ctrlCommit _commitSpeed;
 } forEach _displayData;
