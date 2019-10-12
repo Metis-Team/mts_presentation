@@ -7,5 +7,5 @@ logoOver = "mts_presentation_logo_over_small.paa";
 tooltip = "Metis Presentation";
 tooltipOwned = "Metis Presentation owned";
 picture = "mts_presentation_picture.paa";
-overview = "Metis Presentation give you the abilty to present images and videos to your group, as easy as possible.";
+overview = "Metis Presentation gives you the abilty to present images and videos to your group, as easy as possible.";
 author = "PhILoX";
