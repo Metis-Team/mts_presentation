@@ -26,11 +26,10 @@ if 	(_extension isEqualTo "ogv") then {
     //stop any video that could currently running
     QGVAR(stopVideo) call CBA_fnc_globalEvent;
     [QGVAR(startVideo), _slide] call CBA_fnc_globalEvent;
-};
-if (_extension in ["jpg", "jpeg", "paa"]) then {
+} else {
     {
         _x setObjectTextureGlobal [0, _slide];
-        } forEach GVAR(screens);
+    } forEach GVAR(screens);
 };
 
 //check locality
