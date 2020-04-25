@@ -36,7 +36,7 @@ class RscTitles {
 			};
 			class preview_label: RscText {
 				idc = IDC_DISPLAY_PREVIEW_LABEL;
-				text = CSTRING(preview);
+				text = CSTRING(display_preview);
 				w = "(512 / 1920) * SafeZoneW";
 				h = "(40 / 1080) * SafeZoneH";
 			};

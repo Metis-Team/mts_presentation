@@ -93,7 +93,7 @@ class GVAR(dialog) {
 		};
 		class button_start: Button {
 			idc = IDC_BUTTON_START;
-			text = CSTRING(btn_start);
+			text = CSTRING(dialog_btn_start);
 			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (629 / 1080) * SafeZoneH";
 			w = "(150 / 1920) * SafeZoneW";
@@ -102,7 +102,7 @@ class GVAR(dialog) {
 		};
 		class button_continue: Button {
 			idc = IDC_BUTTON_CONTINUE;
-			text = CSTRING(btn_continue);
+			text = CSTRING(dialog_btn_continue);
 			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
 			y = "SafeZoneY + (575 / 1080) * SafeZoneH";
 			w = "(150 / 1920) * SafeZoneW";
