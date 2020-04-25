@@ -19,7 +19,8 @@ params [["_slide", "", [""]], ["_previewSlide", "", [""]]];
 TRACE_2("", _slide, _previewSlide);
 
 private _extension = _slide select [(count _slide) - 3 , 3];
-CHECK(!(_extension in [ARR_4("ogv", "jpg", "jpeg", "paa")]));
+CHECKRET(!(_extension in [ARR_4("ogv", "jpg", "jpeg", "paa")]), ERROR(format [ARR_2("Not supported media format: %1", _extension)]));
+
 
 //set world screens
 if 	(_extension isEqualTo "ogv") then {
