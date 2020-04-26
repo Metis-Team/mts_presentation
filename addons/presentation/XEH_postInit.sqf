@@ -20,6 +20,7 @@ TRACE_1("", GVAR(topics));
 GVAR(topic) = 0;
 GVAR(currentPage) = 1;
 GVAR(presenter) = objNull;
+GVAR(videoRunning) = false;
 uiNamespace setVariable [QGVAR(videoCtrl), controlNull]; //missionnamespace? [ctrl, display, display]
 
 //parse cba settings variables for screens
@@ -108,16 +109,17 @@ if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_
     } forEach GVAR(screens);
 
     _videoCtrl ctrlSetText _video;
-    missionNamespace setVariable [QGVAR(videoRunning), true, true];
+    GVAR(videoRunning) = true;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(stopVideo), {
-	(uiNamespace getVariable [QGVAR(videoCtrl), controlNull]) ctrlSetText "";
-    {
-        _x setObjectTexture [0, ""];
-    } forEach GVAR(screens);
-    missionNamespace setVariable [QGVAR(videoRunning), false, true];
-    LOG("Stop Video");
+    if (GVAR(videoRunning)) then {
+        (uiNamespace getVariable [QGVAR(videoCtrl), controlNull]) ctrlSetText "";
+        {
+            _x setObjectTexture [0, ""];
+        } forEach GVAR(screens);
+        GVAR(videoRunning) = false;
+    };
 }] call CBA_fnc_addEventHandler;
 
 addMissionEventHandler ["HandleDisconnect", {
