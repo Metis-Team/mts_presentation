@@ -26,6 +26,8 @@ if (!_disconnect) then {
         (uiNamespace getVariable [QGVAR(previewNextSlideDisp), displayNull]) closeDisplay 1;
         uiNamespace setVariable [QGVAR(previewNextSlideDisp), displayNull];
 
+        QGVAR(stopVideo) call CBA_fnc_globalEvent;
+
         if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {
             [GVAR(presenter), 1, GVAR(aceSelfInteractionArray)] call ace_interact_menu_fnc_removeActionFromObject;
         } else {
