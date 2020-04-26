@@ -31,11 +31,10 @@ if (!_disconnect) then {
         } else {
             GVAR(presenter) removeAction GVAR(actionID);
         };
+        missionNamespace setVariable [QGVAR(presenter), objNull, true];
     } else {
         if (!isNull GVAR(presenter)) then {
             remoteExecCall [QFUNC(stopPresentation), GVAR(presenter)];
         };
     };
 };
-
-missionNamespace setVariable [QGVAR(presenter), objNull, true];
