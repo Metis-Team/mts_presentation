@@ -8,7 +8,7 @@ class IGUIBack;
 class GVAR(dialog) {
     idd = IDD_MAIN_DISPLAY;
     movingEnable = 0;
-    OnLoad = QUOTE(((_this select 0) displayctrl IDC_LISTBOX) ctrlAddEventHandler [ARR_2('LBSelChanged', {_this call FUNC(fillPagesCombo)})];);
+    OnLoad = QUOTE(((_this select 0) displayctrl IDC_LISTBOX) ctrlAddEventHandler [ARR_2('LBSelChanged', {_this call FUNC(fillPagesCombo); _this call FUNC(toggleContinueButton)})];);
 
     class Button: RscShortcutButton {
         type = 16;
