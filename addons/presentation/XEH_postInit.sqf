@@ -17,11 +17,21 @@ for "_i" from 0 to (count _topics - 1) do {
 TRACE_1("", GVAR(topics));
 
 //set default values
-GVAR(topic) = 0;
-GVAR(currentPage) = 1;
-GVAR(presenter) = objNull;
-GVAR(videoRunning) = false;
-uiNamespace setVariable [QGVAR(videoCtrl), controlNull]; //missionnamespace? [ctrl, display, display]
+if (isNil QGVAR(topic)) then {
+    GVAR(topic) = 0;
+};
+if (isNil QGVAR(currentPage)) then {
+    GVAR(currentPage) = 1;
+};
+if (isNil QGVAR(presenter)) then {
+    GVAR(presenter) = objNull;
+};
+if (isNil QGVAR(videoRunning)) then {
+    GVAR(videoRunning) = false;
+};
+if (isNil {uiNamespace getVariable QGVAR(videoCtrl)}) then {
+    uiNamespace setVariable [QGVAR(videoCtrl), controlNull];
+};
 
 //parse cba settings variables for screens
 private "_screen";
