@@ -128,8 +128,3 @@ addMissionEventHandler ["HandleDisconnect", {
         [true] call FUNC(stopPresentation);
     };
 }];
-
-
-
-//18:34:24 WARNING: Function 'name' - B Alpha 1-2:1 REMOTE (p_1) has empty name
-//when server shutdown and remote unit is presenter

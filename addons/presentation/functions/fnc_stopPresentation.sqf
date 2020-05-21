@@ -16,9 +16,9 @@
  *
  */
 
- params [["_disconnect", false, [false]]];
+ params [["_notLocal", false, [false]]];
 
-if (!_disconnect) then {
+if (!_notLocal) then {
     if (hasInterface && GVAR(presenter) isEqualTo CURRENT_PLAYER) then {
         (uiNamespace getVariable [QGVAR(curSlideDisplay), displayNull]) closeDisplay 1;
         uiNamespace setVariable [QGVAR(curSlideDisplay), displayNull];

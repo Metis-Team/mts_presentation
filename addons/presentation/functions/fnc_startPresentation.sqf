@@ -58,14 +58,13 @@ if (!_continue) then {
             breakOut "function";
         };
     };
-    [] call FUNC(stopPresentation);
-    //stop any video that is currently running
-    QGVAR(stopVideo) call CBA_fnc_globalEvent;
+    [true] call FUNC(stopPresentation);
 
     missionNamespace setVariable [QGVAR(topic), _topic, true];
     missionNamespace setVariable [QGVAR(currentPage), _page, true];
 
     if (GVAR(screens) isEqualTo []) then {
+        //cba notify
         INFO("No screen available to display presentation.")
     };
     SET_SLIDE call FUNC(changeSlide);
