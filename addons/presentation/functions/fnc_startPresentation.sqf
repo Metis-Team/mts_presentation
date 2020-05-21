@@ -6,13 +6,15 @@
  *      Starts the presentation.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: BOOLEAN - Continue presentation. (Don't change any slide, while taking control)
+ *      1: NUMBER - Topic. Numbers originate from the variable mts_presentation_topics (not needed if parameter 0 is true) (Optional, default: -1. Get information from the dialog)
+ *      2: NUMBER - Page. Numbers originate from the variable mts_presentation_topics (not needed if parameter 0 is true) (Optional, default: 1. First slide)
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      [false, 0, 1] call mts_presentation_fnc_startPresentation
  *
  */
 params [["_continue", false, [false]], ["_topic", -1, [0]], ["_page", 1, [0]]];
@@ -37,7 +39,7 @@ if (!isNull _presenter) then {
 };
 
 
-//check if player can present
+//check if given parameters are usable for presentation
 if (!_continue) then {
     if (_topic isEqualTo -1) then {
         private _mainDisplay = findDisplay IDD_MAIN_DISPLAY;

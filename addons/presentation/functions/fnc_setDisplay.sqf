@@ -3,16 +3,16 @@
  *  Author: PhILoX
  *
  *  Description:
- *      [Description]
+ *      Creates or changes size of displays for the presenter.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: STRING - Displaysize. Current values: "small" or "big"
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      "small" call mts_presentation_fnc_setDisplay
  *
  */
 

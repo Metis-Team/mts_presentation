@@ -6,13 +6,13 @@
  *      Stops the presentation.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: BOOLEAN - Local maschine is not the presenter. (Optional, default: false)
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      call mts_presentation_fnc_stopPresentation
  *
  */
 

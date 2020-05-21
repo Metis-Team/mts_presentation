@@ -13,7 +13,7 @@
  *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      [Control #4, 0] call mts_presentation_fnc_fillPagesCombo
  *
  */
 

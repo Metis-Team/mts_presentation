@@ -12,7 +12,7 @@
  *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      call mts_presentation_fnc_openDialog
  *
  */
 private _status = createDialog QGVAR(dialog);

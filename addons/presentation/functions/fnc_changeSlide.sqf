@@ -3,16 +3,16 @@
  *  Author: PhILoX
  *
  *  Description:
- *      Changes according to input the slides.
+ *      Set next and preview slide, according to input.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: NUMBER - Specifies which direction the slide should be going. -1 previous slide. 0 set starting slide of presentation (e.g. slide0.png). 1 next slide. (default: 1)
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      1 call mts_presentation_fnc_changeSlide
  *
  */
 params [["_direction", NEXT_SLIDE, [0]]];

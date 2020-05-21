@@ -6,13 +6,14 @@
  *      Sets the given slide on all screens.
  *
  *  Parameter(s):
- *      0: [TYPE] - [argument name]
+ *      0: STRING - Full slide path. (e.g. \z\mts_slides\addons\slides\test_images\slide1.jpg)
+ *      1: STRING - Full slide path for the next slide (preview slide for the presenter) (e.g. \z\mts_slides\addons\slides\test_images\slide2.jpg)
  *
  *  Returns:
- *      [TYPE] - [return name]
+ *      Nothing.
  *
  *  Example:
- *      [[arguments]] call [function name]
+ *      [\z\mts_slides\addons\slides\test_images\slide1.jpg, \z\mts_slides\addons\slides\test_images\slide2.jpg] call mts_presentation_fnc_setSlide
  *
  */
 params [["_slide", "", [""]], ["_previewSlide", "", [""]]];
