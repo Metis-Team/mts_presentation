@@ -31,7 +31,7 @@ if (!isNull _presenter) then {
         _presenter = _player;
     };
     if !(_presenter isEqualTo _player) then {
-        //cba notify
+        [["Metis Presentation:", 1.2, [1, 1, 0, 1]], LLSTRING(presenter_slot_occupied_line_1), format[LLSTRING(presenter_slot_occupied_line_2), name _presenter], false] call CBA_fnc_notify;
         breakOut "function";
     };
 } else {
@@ -44,7 +44,7 @@ if (!_continue) then {
     if (_topic isEqualTo -1) then {
         private _mainDisplay = findDisplay IDD_MAIN_DISPLAY;
         if (isNull _mainDisplay) then {
-            ERROR("Failed to retrieve main display.");
+            ERROR("Failed to retrieve main display!");
             breakOut "function";
         };
         private _listboxCtrl = (_mainDisplay displayCtrl IDC_LISTBOX);
@@ -53,8 +53,7 @@ if (!_continue) then {
         _page =  (lbCurSel (_mainDisplay displayCtrl IDC_COMBOBOX)) + 1;
     } else {
         if (_topic < 0 && _page < 1) then {
-            ERROR("Parameters are invalid.")
-            //cba notify
+            ERROR("Parameters invalid!")
             breakOut "function";
         };
     };
@@ -64,7 +63,7 @@ if (!_continue) then {
     missionNamespace setVariable [QGVAR(currentPage), _page, true];
 
     if (GVAR(screens) isEqualTo []) then {
-        //cba notify
+        [["Metis Presentation:", 1.2, [1, 1, 0, 1]], LLSTRING(no_screen_to_display), false] call CBA_fnc_notify;
         INFO("No screen available to display presentation.")
     };
     SET_SLIDE call FUNC(changeSlide);

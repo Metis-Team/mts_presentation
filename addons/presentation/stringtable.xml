@@ -116,5 +116,16 @@
                 <English>Scroll Menu</English>
             </Key>
         </Container>
+        <Container name="Notifications">
+            <Key ID="str_mts_presentation_presenter_slot_occupied_line_1">
+                <English>The presentation slot is already</English>
+            </Key>
+            <Key ID="str_mts_presentation_presenter_slot_occupied_line_2">
+                <English>occupied by: %1</English>
+            </Key>
+            <Key ID="str_mts_presentation_no_screen_to_display">
+                <English>No screen available to display presentation.</English>
+            </Key>
+        </Container>
     </Package>
 </Project>
