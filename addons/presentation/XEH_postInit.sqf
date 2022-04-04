@@ -2,18 +2,9 @@
 
 GVAR(topics) = [];
 //get all topics from config
-private _topics = configfile >> QGVAR(topics);
+[configfile >> QGVAR(topics)] call FUNC(getTopics);
+[missionConfigFile >> QGVAR(topics)] call FUNC(getTopics);
 
-private ["_topic", "_displayName", "_path", "_pages", "_extension"];
-for "_i" from 0 to (count _topics - 1) do {
-    _topic = configName (_topics select _i);
-    _displayName = getText (_topics >> _topic >> "displayName");
-    _path = getText (_topics >>  _topic >> "path");
-    _pages = getNumber (_topics >>  _topic >> "pages");
-    _extension = toLower (getText (_topics >>  _topic >> "extension"));
-
-    GVAR(topics) pushBack [_displayName, _path, _pages, _extension];
-};
 TRACE_1("", GVAR(topics));
 
 //set default values
@@ -33,15 +24,24 @@ if (isNil {uiNamespace getVariable QGVAR(videoCtrl)}) then {
     uiNamespace setVariable [QGVAR(videoCtrl), controlNull];
 };
 
+private _screens = (GVAR(cba_settings_screens) call CBA_fnc_removeWhitespace) splitString ",";
 //parse cba settings variables for screens
 private "_screen";
 GVAR(screens) = [];
 {
     _screen = missionNamespace getVariable [_x, objNull];
+    TRACE_2("Screen", _screen, getObjectTextures _screen);
+
+    if (isNull _screen) then {continue;};
+
     if ((count ([getObjectTextures _screen] param [0,[]])) > 0) then {
         GVAR(screens) pushBack _screen;
     };
-} forEach ((GVAR(cba_settings_screens) call CBA_fnc_removeWhitespace) splitString ",");
+} forEach _screens;
+
+TRACE_2("CBA Screens", _screens, GVAR(screens));
+
+private _controls = (GVAR(cba_settings_controls) call CBA_fnc_removeWhitespace) splitString ",";
 
 //parse cba settings variables for controls
 private "_control";
@@ -51,7 +51,9 @@ GVAR(controls) = [];
     if (!(isNull _control) && !(isSimpleObject _control)) then {
         GVAR(controls) pushBack _control;
     };
-} forEach ((GVAR(cba_settings_controls) call CBA_fnc_removeWhitespace) splitString ",");
+} forEach _controls;
+
+TRACE_2("CBA Controls", _controls, GVAR(controls));
 
 //add actions to controls
 if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {

@@ -4,7 +4,7 @@
     QGVAR(displayCurrentSlide),
     "CHECKBOX",
     [LLSTRING(cba_settings_show_current_slide), LLSTRING(cba_settings_show_current_slide_tooltip)],
-    LLSTRING(cba_category_name),
+    [LLSTRING(cba_category_name), LLSTRING(cba_category_name_user_settings)],
     true,
     0,
     {}
@@ -14,7 +14,7 @@
     QGVAR(dispSlideSize),
     "LIST",
     [LLSTRING(cba_settings_show_current_slide_size), LLSTRING(cba_settings_show_current_slide_size_tooltip)],
-    LLSTRING(cba_category_name),
+    [LLSTRING(cba_category_name), LLSTRING(cba_category_name_user_settings)],
     [["small","big"], [LLSTRING(cba_settings_current_slide_size_small), LLSTRING(cba_settings_current_slide_size_big)], 0],
     0,
     {}
@@ -25,7 +25,7 @@
     QGVAR(previewNextSlide),
     "CHECKBOX",
     [LLSTRING(cba_settings_preview_next_slide), LLSTRING(cba_settings_preview_next_slide_tooltip)],
-    LLSTRING(cba_category_name),
+    [LLSTRING(cba_category_name), LLSTRING(cba_category_name_user_settings)],
     true,
     0,
     {}
@@ -46,7 +46,7 @@
     QGVAR(sortAlphabetically),
     "CHECKBOX",
     [LLSTRING(cba_settings_sort_alphabetically), LLSTRING(cba_settings_sort_alphabetically_tooltip)],
-    LLSTRING(cba_category_name),
+    [LLSTRING(cba_category_name), LLSTRING(cba_category_name_user_settings)],
     true,
     0,
     {}

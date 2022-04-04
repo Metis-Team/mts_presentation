@@ -1,5 +1,6 @@
 PREP(changeSlide);
 PREP(fillPagesCombo);
+PREP(getTopics);
 PREP(toggleContinueButton);
 PREP(openDialog);
 PREP(setDisplay);

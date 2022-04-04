@@ -4,7 +4,6 @@
         <Container name="Misc">
             <Key ID="str_mts_presentation_authors">
                 <English>PhILoX</English>
-                <German>PhILoX</German>
             </Key>
         </Container>
         <Container name="Display">
@@ -31,10 +30,12 @@
         <Container name="CBA">
             <Key ID="str_mts_presentation_cba_category_name">
                 <English>Metis Presentation</English>
-                <German>Metis Präsentation</German>
             </Key>
             <Key ID="str_mts_presentation_cba_category_name_mission_settings">
                 <English>Mission Settings</English>
+            </Key>
+            <Key ID="str_mts_presentation_cba_category_name_user_settings">
+                <English>User Settings</English>
             </Key>
         </Container>
         <Container name="CBA_Keybinding">
@@ -113,7 +114,7 @@
                 <English>ACE Interaction</English>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_actions_scroll_menu">
-                <English>Scroll Menu</English>
+                <English>Scroll Menu (Vanilla)</English>
             </Key>
         </Container>
         <Container name="Notifications">

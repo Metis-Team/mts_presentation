@@ -65,10 +65,12 @@ if (!_continue) then {
     if (GVAR(screens) isEqualTo []) then {
         [["Metis Presentation:", 1.2, [1, 1, 0, 1]], LLSTRING(no_screen_to_display), false] call CBA_fnc_notify;
         INFO("No screen available to display presentation.")
+        breakOut "function";
     };
-    SET_SLIDE call FUNC(changeSlide);
 };
 TRACE_3("After processing", _continue, _topic, _page);
+
+SET_SLIDE call FUNC(changeSlide);
 
 if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {
     private _action = [
@@ -106,3 +108,4 @@ if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_
 }] call CBA_fnc_addBISEventHandler;
 
 missionNamespace setVariable [QGVAR(presenter), _presenter, true];
+closeDialog 1;
