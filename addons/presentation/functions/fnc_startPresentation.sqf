@@ -31,7 +31,7 @@ if (!isNull _presenter) then {
         _presenter = _player;
     };
     if !(_presenter isEqualTo _player) then {
-        [[LLSTRING(name), 1.2, [1, 1, 0, 1]], LLSTRING(presenter_slot_occupied_line_1), format[LLSTRING(presenter_slot_occupied_line_2), name _presenter], false] call CBA_fnc_notify;
+        [[LLSTRING(mod_name), 1.2, [1, 1, 0, 1]], LLSTRING(presenter_slot_occupied_line_1), format[LLSTRING(presenter_slot_occupied_line_2), name _presenter], false] call CBA_fnc_notify;
         breakOut "function";
     };
 } else {
@@ -63,7 +63,7 @@ if (!_continue) then {
     missionNamespace setVariable [QGVAR(currentPage), _page, true];
 
     if (GVAR(screens) isEqualTo []) then {
-        [[LLSTRING(name), 1.2, [1, 1, 0, 1]], LLSTRING(no_screen_to_display), false] call CBA_fnc_notify;
+        [[LLSTRING(mod_name), 1.2, [1, 1, 0, 1]], LLSTRING(no_screen_to_display), false] call CBA_fnc_notify;
         INFO("No screen available to display presentation.")
         breakOut "function";
     };

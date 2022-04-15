@@ -6,7 +6,7 @@
                 <English>PhILoX</English>
                 <German>PhILoX</German>
             </Key>
-            <key ID="str_mts_presentation_name">
+            <key ID="str_mts_presentation_mod_name">
                 <English>Metis Presentation</English>
                 <German>Metis Presentation</German>
             </Key>
@@ -30,7 +30,7 @@
         <Container name="Actions">
             <Key ID="str_mts_presentation_actions_presentation_menu">
                 <English>Open presentation menu</English>
-                <German>Öffne Präsentationsmenu</German>
+                <German>Öffne Präsentationsmenü</German>
             </Key>
             <Key ID="str_mts_presentation_actions_stop_presentation">
                 <English>Stop presentation</English>
@@ -38,10 +38,6 @@
             </Key>
         </Container>
         <Container name="CBA">
-            <Key ID="str_mts_presentation_cba_category_name">
-                <English>Metis Presentation</English>
-                <German>Metis Presentation</German>
-            </Key>
             <Key ID="str_mts_presentation_cba_category_name_mission_settings">
                 <English>Mission Settings</English>
                 <German>Missionseinstellungen</German>
@@ -90,14 +86,6 @@
                 <English>Shows the preview of the next slide to the presenter. Not available with videos</English>
                 <German>Zeige dem Vorsteller die Vorschau der nächsten Folie. Nicht bei Videos verfügbar.</German>
             </Key>
-            <Key ID="str_mts_presentation_cba_settings_show_timer">
-                <English>Show passed time</English>
-                <German>Zeige verstrichene Zeit</German>
-            </Key>
-            <Key ID="str_mts_presentation_cba_settings_show_timer_tooltip">
-                <English>Shows the time that has passed since the start of the presentation.</English>
-                <German>Zeige die seit Beginn der Präsentation verstrichene Zeit.</German>
-            </Key>
             <Key ID="str_mts_presentation_cba_settings_sort_alphabetically">
                 <English>Sort list alphabetically</English>
                 <German>Sortiere Liste alphabetisch</German>
@@ -112,7 +100,7 @@
             </Key>
             <Key ID="str_mts_presentation_cba_settings_screens_tooltip">
                 <English>Put in comma separated object names that sould present the slide.</English>
-                <German>Eine kommaseparierte Liste an Objektnamen auf dene die Folien angezeigt werden sollen.</German>
+                <German>Eine kommaseparierte Liste an Objektnamen auf denen die Folien angezeigt werden sollen.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_controls">
                 <English>Controls</English>
@@ -120,7 +108,7 @@
             </Key>
             <Key ID="str_mts_presentation_cba_settings_controls_tooltip">
                 <English>Put in comma separated object names where you can get access to the presentation dialog.</English>
-                <German>Eine kommaseparierte Liste an Objektnamen womit die Präsentation gesteuert werden kann.</German>
+                <German>Eine kommaseparierte Liste an Objektnamen womit der Presentationsdialog geöffnet werden kann.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_current_slide_size">
                 <English>Size</English>
