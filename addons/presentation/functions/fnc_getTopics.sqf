@@ -12,7 +12,7 @@
  *      Nothing.
  *
  *  Example:
- *      [configfile >> mts_presentation_topics] call mts_presentation_getTopics;
+ *      [configfile >> mts_presentation_topics] call mts_presentation_fnc_getTopics;
  *
  */
 
@@ -27,6 +27,11 @@ for "_i" from 0 to (count _topics - 1) do {
      _name = getText (_topics >> _topic >> "name");
      _pages = getNumber (_topics >> _topic >> "slides");
      _extension = toLower (getText (_topics >> _topic >> "extension"));
+
+     if !(_path isEqualTo "") then {
+         _path = format ["%1%2", _path, "\"];
+     };
+     TRACE_1("Path", _path);
 
      GVAR(topics) pushBack [_displayName, _path, _name, _pages, _extension];
 };
