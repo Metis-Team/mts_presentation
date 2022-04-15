@@ -26,7 +26,7 @@ for "_i" from 0 to (count _topics - 1) do {
      _path = getText (_topics >> _topic >> "path");
      _name = getText (_topics >> _topic >> "name");
      _pages = getNumber (_topics >> _topic >> "slides");
-     _extension = toLower (getText (_topics >>  _topic >> "extension"));
+     _extension = toLower (getText (_topics >> _topic >> "extension"));
 
      GVAR(topics) pushBack [_displayName, _path, _name, _pages, _extension];
 };
