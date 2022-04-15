@@ -6,7 +6,7 @@
  *      Sets the given slide on all screens.
  *
  *  Parameter(s):
- *      0: STRING - Full slide path. (e.g. \z\mts_slides\addons\slides\test_images\slide1.jpg)
+ *      0: STRING - Full slide path. (e.g. "my_slide_mod\test_images\slide1.jpg")
  *      1: STRING - Full slide path for the next slide (preview slide for the presenter) (e.g. \z\mts_slides\addons\slides\test_images\slide2.jpg)
  *
  *  Returns:
