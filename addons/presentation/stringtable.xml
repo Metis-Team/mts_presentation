@@ -3,12 +3,16 @@
     <Package name="mts_presentation">
         <Container name="Misc">
             <Key ID="str_mts_presentation_authors">
-                <English>PhILoX</English>
-                <German>PhILoX</German>
+                <English>PhILoX, Timi007</English>
+                <German>PhILoX, Timi007</German>
             </Key>
             <key ID="str_mts_presentation_mod_name">
                 <English>Metis Presentation</English>
                 <German>Metis Presentation</German>
+            </Key>
+            <Key ID="str_mts_presentation_URL">
+                <Original>https://github.com/Metis-Team</Original>
+                <German>https://github.com/Metis-Team</German>
             </Key>
         </Container>
         <Container name="Display">
