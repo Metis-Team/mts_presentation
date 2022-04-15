@@ -20,7 +20,10 @@
 <p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA A3</a>.</sup></strong>
 </p>
- 
+
+**Metis Presentation** brings you the ability to present videos and images in front of an ingame audience.  
+With this you will be able to conduct mission briefings or training lectures.
+
 ## Features
  
 - Support for multiple presentations (selectable in a list)
@@ -32,6 +35,14 @@
 - Toggle visibility of preview of next slide (on/off)
 - Start presentation on any slide
 - Continue presentation on current slide (possible to switch presenters in the middle of the presentation)
+ 
+## FAQ
+- Q: Does the mod have to be run on the server?  
+  A: No.
+- Q: Can I mix videos and images in one presentation?  
+  A: No.
+- Q: Can I do multiple presentation at the same time?  
+  A: No.
  
 ## Setup
  
