@@ -12,7 +12,7 @@
  *      Nothing.
  *
  *  Example:
- *      "small" call mts_presentation_fnc_setDisplay
+ *      ["small"] call mts_presentation_fnc_setDisplay
  *
  */
 
