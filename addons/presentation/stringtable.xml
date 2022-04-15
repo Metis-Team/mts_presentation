@@ -4,6 +4,7 @@
         <Container name="Misc">
             <Key ID="str_mts_presentation_authors">
                 <English>PhILoX</English>
+                <German>PhILoX</German>
             </Key>
             <key ID="str_mts_presentation_name">
                 <English>Metis Presentation</English>
@@ -13,123 +14,159 @@
         <Container name="Display">
             <Key ID="str_mts_presentation_display_preview">
                 <English>Preview</English>
+                <German>Vorschau</German>
             </Key>
         </Container>
         <Container name="Dialog">
             <Key ID="str_mts_presentation_dialog_btn_start">
                 <English>Start</English>
+                <German>Beginnen</German>
             </Key>
             <Key ID="str_mts_presentation_dialog_btn_continue">
                 <English>Continue</English>
+                <German>Fortsetzen</German>
             </Key>
         </Container>
         <Container name="Actions">
             <Key ID="str_mts_presentation_actions_presentation_menu">
                 <English>Open presentation menu</English>
+                <German>Öffne Präsentationsmenu</German>
             </Key>
             <Key ID="str_mts_presentation_actions_stop_presentation">
                 <English>Stop presentation</English>
+                <German>Präsentation beenden</German>
             </Key>
         </Container>
         <Container name="CBA">
             <Key ID="str_mts_presentation_cba_category_name">
                 <English>Metis Presentation</English>
+                <German>Metis Presentation</German>
             </Key>
             <Key ID="str_mts_presentation_cba_category_name_mission_settings">
                 <English>Mission Settings</English>
+                <German>Missionseinstellungen</German>
             </Key>
             <Key ID="str_mts_presentation_cba_category_name_user_settings">
                 <English>User Settings</English>
+                <German>Benutzereinstellungen</German>
             </Key>
         </Container>
         <Container name="CBA_Keybinding">
             <Key ID="str_mts_presentation_cba_keybinding_next_slide">
                 <English>Next slide</English>
+                <German>Nächste Folie</German>
             </Key>
             <Key ID="str_mts_presentation_cba_keybinding_previous_slide">
                 <English>Previous slide</English>
+                <German>Vorherige Folie</German>
             </Key>
             <Key ID="str_mts_presentation_cba_keybinding_big_display">
                 <English>Switch to big display</English>
+                <German>Wechsel auf großen Bildschirm</German>
             </Key>
             <Key ID="str_mts_presentation_cba_keybinding_small_display">
                 <English>Switch to small display</English>
+                <German>Wechsel auf kleinen Bildschirm</German>
             </Key>
             <Key ID="str_mts_presentation_cba_keybinding_start_stop_video">
                 <English>Start/stop video</English>
+                <German>Beginne/Beende Video</German>
             </Key>
         </Container>
         <Container name="CBA_Settings">
             <Key ID="str_mts_presentation_cba_settings_show_current_slide">
                 <English>Show current slide</English>
+                <German>Zeige derzeitige Folie</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_current_slide_tooltip">
-                <English>Shows the current slide to the presenter</English>
+                <English>Shows the current slide to the presenter.</English>
+                <German>Zeige dem Vorsteller die derzeitige Folie.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_preview_next_slide">
-                <English>Show preview of next slide.</English>
+                <English>Show preview of next slide</English>
+                <German>Zeige Vorschau der nächsten Folie</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_preview_next_slide_tooltip">
                 <English>Shows the preview of the next slide to the presenter. Not available with videos</English>
+                <German>Zeige dem Vorsteller die Vorschau der nächsten Folie. Nicht bei Videos verfügbar.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_timer">
-                <English>Show timer</English>
+                <English>Show passed time</English>
+                <German>Zeige verstrichene Zeit</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_timer_tooltip">
-                <English>Shows the time that has passed, since the start of the presentation</English>
+                <English>Shows the time that has passed since the start of the presentation.</English>
+                <German>Zeige die seit Beginn der Präsentation verstrichene Zeit.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_sort_alphabetically">
                 <English>Sort list alphabetically</English>
+                <German>Sortiere Liste alphabetisch</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_sort_alphabetically_tooltip">
-                <English>Sorts the list in the presentation selection alphabetically</English>
+                <English>Sorts the list in the presentation selection alphabetically.</English>
+                <German>Sortert die Präsentationsauswahlliste alphabetisch.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_screens">
                 <English>Screens</English>
+                <German>Bildschirme</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_screens_tooltip">
-                <English>Put in comma separated object names, that sould present the slide</English>
+                <English>Put in comma separated object names that sould present the slide.</English>
+                <German>Eine kommaseparierte Liste an Objektnamen auf dene die Folien angezeigt werden sollen.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_controls">
                 <English>Controls</English>
+                <German>Steuerungsgeräte</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_controls_tooltip">
-                <English>Put in comma separated object names, where you can get access to the presentation dialog</English>
+                <English>Put in comma separated object names where you can get access to the presentation dialog.</English>
+                <German>Eine kommaseparierte Liste an Objektnamen womit die Präsentation gesteuert werden kann.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_current_slide_size">
                 <English>Size</English>
+                <German>Größe</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_current_slide_size_tooltip">
-                <English>Select the default size of the current Slide</English>
+                <English>Select the default size of the current slide.</English>
+                <German>Setzt die Standardgröße der derzeitigen Folien.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_current_slide_size_small">
                 <English>Small</English>
+                <German>Klein</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_current_slide_size_big">
                 <English>Big</English>
+                <German>Groß</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_actions">
-                <English>Action</English>
+                <English>Interaction System</English>
+                <German>Interaktionsmenü</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_actions_tooltip">
-                <English>ACE interaction system or vanilla scroll menu. It will fall back to vanilla scroll menu, if ACE is not present.</English>
+                <English>Sets the interaction system to use. If ACE is not present, it will fall back to Vanilla system.</English>
+                <German>Setzt das Interaktionsmenü welches benutzt werden soll. Wenn ACE nicht geladen ist, wird das Vanilla system verwendet.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_actions_ace_interaction">
                 <English>ACE Interaction</English>
+                <German>ACE Interaktionsmenü</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_actions_scroll_menu">
                 <English>Scroll Menu (Vanilla)</English>
+                <German>Scrollmenü (Vanilla)</German>
             </Key>
         </Container>
         <Container name="Notifications">
             <Key ID="str_mts_presentation_presenter_slot_occupied_line_1">
-                <English>The presentation slot is already</English>
+                <English>The presentation is already</English>
+                <German>Die Präsentation wird bereits</German>
             </Key>
             <Key ID="str_mts_presentation_presenter_slot_occupied_line_2">
-                <English>occupied by: %1</English>
+                <English>coducted by %1.</English>
+                <German>von %1 geführt.</German>
             </Key>
             <Key ID="str_mts_presentation_no_screen_to_display">
                 <English>No screen available to display presentation.</English>
+                <German>Keine Bildschirme zum Präsentieren verfügbar.</German>
             </Key>
         </Container>
     </Package>
