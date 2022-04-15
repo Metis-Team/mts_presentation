@@ -18,25 +18,25 @@
 
  params [["_notLocal", false, [false]]];
 
-if (!_notLocal) then {
-    if (hasInterface && GVAR(presenter) isEqualTo CURRENT_PLAYER) then {
-        (uiNamespace getVariable [QGVAR(curSlideDisplay), displayNull]) closeDisplay 1;
-        uiNamespace setVariable [QGVAR(curSlideDisplay), displayNull];
+CHECK(_notLocal);
 
-        (uiNamespace getVariable [QGVAR(previewNextSlideDisp), displayNull]) closeDisplay 1;
-        uiNamespace setVariable [QGVAR(previewNextSlideDisp), displayNull];
+if (hasInterface && GVAR(presenter) isEqualTo CURRENT_PLAYER) then {
+    (uiNamespace getVariable [QGVAR(curSlideDisplay), displayNull]) closeDisplay 1;
+    uiNamespace setVariable [QGVAR(curSlideDisplay), displayNull];
 
-        QGVAR(stopVideo) call CBA_fnc_globalEvent;
+    (uiNamespace getVariable [QGVAR(previewNextSlideDisp), displayNull]) closeDisplay 1;
+    uiNamespace setVariable [QGVAR(previewNextSlideDisp), displayNull];
 
-        if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {
-            [GVAR(presenter), 1, GVAR(aceSelfInteractionArray)] call ace_interact_menu_fnc_removeActionFromObject;
-        } else {
-            GVAR(presenter) removeAction GVAR(actionID);
-        };
-        missionNamespace setVariable [QGVAR(presenter), objNull, true];
+    QGVAR(stopVideo) call CBA_fnc_globalEvent;
+
+    if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {
+        [GVAR(presenter), 1, GVAR(aceSelfInteractionArray)] call ace_interact_menu_fnc_removeActionFromObject;
     } else {
-        if (!isNull GVAR(presenter)) then {
-            remoteExecCall [QFUNC(stopPresentation), GVAR(presenter)];
-        };
+        GVAR(presenter) removeAction GVAR(actionID);
+    };
+    missionNamespace setVariable [QGVAR(presenter), objNull, true];
+} else {
+    if (!isNull GVAR(presenter)) then {
+        remoteExecCall [QFUNC(stopPresentation), GVAR(presenter)];
     };
 };
