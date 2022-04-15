@@ -47,10 +47,10 @@ class GVAR(dialog) {
         colorPictureRight[] = {0, 0, 0, 1};
         colorTextRight[] = {0, 0, 0, 1};
         arrowEmpty = "\A3\ui_f\data\GUI\Cfg\Scrollbar\arrowEmpty_ca.paa";
-    	arrowFull = "\A3\ui_f\data\GUI\Cfg\Scrollbar\arrowFull_ca.paa";
-    	thumb = "\A3\ui_f\data\GUI\Cfg\Scrollbar\thumb_ca.paa";
-    	border = "\A3\ui_f\data\GUI\Cfg\Scrollbar\border_ca.paa";
-    	color[] = {1,1,1,0.6};
+        arrowFull = "\A3\ui_f\data\GUI\Cfg\Scrollbar\arrowFull_ca.paa";
+        thumb = "\A3\ui_f\data\GUI\Cfg\Scrollbar\thumb_ca.paa";
+        border = "\A3\ui_f\data\GUI\Cfg\Scrollbar\border_ca.paa";
+        color[] = {1,1,1,0.6};
     };
 
     class ControlsBackground {
@@ -81,67 +81,67 @@ class GVAR(dialog) {
     };
     class controls {
         class combo_pages: RscCombo {
-			idc = IDC_COMBOBOX;
+            idc = IDC_COMBOBOX;
             style = "16";
-			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (528 / 1080) * SafeZoneH";
-			w = "(150 / 1920) * SafeZoneW";
-			h = "(33 / 1080) * SafeZoneH";
+            x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (528 / 1080) * SafeZoneH";
+            w = "(150 / 1920) * SafeZoneW";
+            h = "(33 / 1080) * SafeZoneH";
 
 
-			class ComboScrollBar: RscCombo {};
-		};
-		class button_start: Button {
-			idc = IDC_BUTTON_START;
-			text = CSTRING(dialog_btn_start);
-			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (629 / 1080) * SafeZoneH";
-			w = "(150 / 1920) * SafeZoneW";
-			h = "(40 / 1080) * SafeZoneH";
+            class ComboScrollBar: RscCombo {};
+        };
+        class button_start: Button {
+            idc = IDC_BUTTON_START;
+            text = CSTRING(dialog_btn_start);
+            x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (629 / 1080) * SafeZoneH";
+            w = "(150 / 1920) * SafeZoneW";
+            h = "(40 / 1080) * SafeZoneH";
             onButtonClick = QUOTE(false call FUNC(startPresentation));
-		};
-		class button_continue: Button {
-			idc = IDC_BUTTON_CONTINUE;
-			text = CSTRING(dialog_btn_continue);
-			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (575 / 1080) * SafeZoneH";
-			w = "(150 / 1920) * SafeZoneW";
-			h = "(40 / 1080) * SafeZoneH";
+        };
+        class button_continue: Button {
+            idc = IDC_BUTTON_CONTINUE;
+            text = CSTRING(dialog_btn_continue);
+            x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (575 / 1080) * SafeZoneH";
+            w = "(150 / 1920) * SafeZoneW";
+            h = "(40 / 1080) * SafeZoneH";
             onButtonClick = QUOTE(true call FUNC(startPresentation));
-		};
-// 		class button_help: Button {
-// 			idc = -1;
-// 			text = "Hilfe";
-// 			x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
-// 			y = "SafeZoneY + (474 / 1080) * SafeZoneH";
-// 			w = "(150 / 1920) * SafeZoneW";
-// 			h = "(40 / 1080) * SafeZoneH";
-//   		action = QUOTE(call FUNC(help););
-// 		};
-		class title: RscText {
-			idc = -1;
-			style = 2;
-			x = "SafeZoneX + (768 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (400 / 1080) * SafeZoneH";
-			w = "(384 / 1920) * SafeZoneW";
-			h = "(57 / 1080) * SafeZoneH";
+        };
+        // class button_help: Button {
+        //     idc = -1;
+        //     text = "Hilfe";
+        //     x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
+        //     y = "SafeZoneY + (474 / 1080) * SafeZoneH";
+        //     w = "(150 / 1920) * SafeZoneW";
+        //     h = "(40 / 1080) * SafeZoneH";
+        //   action = QUOTE(call FUNC(help););
+        // };
+        class title: RscText {
+            idc = -1;
+            style = 2;
+            x = "SafeZoneX + (768 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (400 / 1080) * SafeZoneH";
+            w = "(384 / 1920) * SafeZoneW";
+            h = "(57 / 1080) * SafeZoneH";
             text = "Presentation Selection";
-		};
-		class listbox_backgorund: RscPicture {
-			idc = -1;
-			x = "SafeZoneX + (736 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (473 / 1080) * SafeZoneH";
-			w = "(266 / 1920) * SafeZoneW";
-			h = "(196 / 1080) * SafeZoneH";
-			text = QPATHTOF(data\lb_bg.paa);
-		};
-		class listbox: Listbox {
-			idc = IDC_LISTBOX;
+        };
+        class listbox_backgorund: RscPicture {
+            idc = -1;
+            x = "SafeZoneX + (736 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (473 / 1080) * SafeZoneH";
+            w = "(266 / 1920) * SafeZoneW";
+            h = "(196 / 1080) * SafeZoneH";
+            text = QPATHTOF(data\lb_bg.paa);
+        };
+        class listbox: Listbox {
+            idc = IDC_LISTBOX;
             style = "16";
-			x = "SafeZoneX + (736 / 1920) * SafeZoneW";
-			y = "SafeZoneY + (475 / 1080) * SafeZoneH";
-			w = "(264 / 1920) * SafeZoneW";
-			h = "(192 / 1080) * SafeZoneH";
-		};
+            x = "SafeZoneX + (736 / 1920) * SafeZoneW";
+            y = "SafeZoneY + (475 / 1080) * SafeZoneH";
+            w = "(264 / 1920) * SafeZoneW";
+            h = "(192 / 1080) * SafeZoneH";
+        };
     };
 };
