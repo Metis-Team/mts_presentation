@@ -1,5 +1,3 @@
-//params ["_setting", "_value"];
-//edit change setting on the fly
 [
     QGVAR(displayCurrentSlide),
     "CHECKBOX",
@@ -20,7 +18,6 @@
     {}
 ] call CBA_settings_fnc_init;
 
-//edit change setting on the fly
 [
     QGVAR(previewNextSlide),
     "CHECKBOX",
@@ -30,17 +27,6 @@
     0,
     {}
 ] call CBA_settings_fnc_init;
-
-//edit change setting on the fly
-// [
-//     QGVAR(showTimer),
-//     "CHECKBOX",
-//     [LLSTRING(cba_settings_show_timer), LLSTRING(cba_settings_show_timer_tooltip)],
-//     LLSTRING(cba_category_name),
-//     true,
-//     0,
-//     {}
-// ] call CBA_settings_fnc_init;
 
 [
     QGVAR(sortAlphabetically),
@@ -52,7 +38,6 @@
     {}
 ] call CBA_settings_fnc_init;
 
-//edit change setting on the fly
 [
     QGVAR(cba_settings_screens),
     "EDITBOX",
@@ -62,7 +47,7 @@
     1,
     {}
 ] call CBA_settings_fnc_init;
-//edit change setting on the fly
+
 [
     QGVAR(cba_settings_controls),
     "EDITBOX",

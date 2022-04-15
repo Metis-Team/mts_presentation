@@ -34,7 +34,6 @@ if (_extension isEqualTo "ogv") then {
     } forEach GVAR(screens);
 };
 
-//check locality
 //set presenter display screens
 private _displayData = [];
 
