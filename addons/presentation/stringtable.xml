@@ -112,7 +112,7 @@
             </Key>
             <Key ID="str_mts_presentation_cba_settings_controls_tooltip">
                 <English>Put in comma separated object names where you can get access to the presentation dialog.</English>
-                <German>Eine kommaseparierte Liste an Objektnamen womit der Presentationsdialog geöffnet werden kann.</German>
+                <German>Eine kommaseparierte Liste an Objektnamen womit der Präsentationsdialog geöffnet werden kann.</German>
             </Key>
             <Key ID="str_mts_presentation_cba_settings_show_current_slide_size">
                 <English>Size</English>
