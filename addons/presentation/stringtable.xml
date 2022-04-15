@@ -5,6 +5,10 @@
             <Key ID="str_mts_presentation_authors">
                 <English>PhILoX</English>
             </Key>
+            <key ID="str_mts_presentation_name">
+                <English>Metis Presentation</English>
+                <German>Metis Presentation</German>
+            </Key>
         </Container>
         <Container name="Display">
             <Key ID="str_mts_presentation_display_preview">
