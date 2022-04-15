@@ -13,7 +13,7 @@
  *      Nothing.
  *
  *  Example:
- *      [\z\mts_slides\addons\slides\test_images\slide1.jpg, \z\mts_slides\addons\slides\test_images\slide2.jpg] call mts_presentation_fnc_setSlide
+ *      ["my_slide_mod\test_images\slide1.jpg", "my_slide_mod\test_images\slide2.jpg"] call mts_presentation_fnc_setSlide
  *
  */
 params [["_slide", "", [""]], ["_previewSlide", "", [""]]];
