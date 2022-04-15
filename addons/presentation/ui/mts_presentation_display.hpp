@@ -2,7 +2,7 @@ class RscTitles {
     class GVAR(curSlideDisplay) {
         idd = IDD_CURRENT_SLIDE_DISPLAY;
         OnLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(curSlideDisplay), _this select 0)]);
-        duration = 1e+011;
+        duration = "1e+011";
 
         class controls {
             class background: IGUIBack {
@@ -16,7 +16,7 @@ class RscTitles {
     class GVAR(previewNextSlideDisp) {
         idd = IDD_PREVIEW_NEXT_SLIDE_DISPLAY;
         OnLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(previewNextSlideDisp), _this select 0)]);
-        duration = 1e+011;
+        duration = "1e+011";
 
         class controls {
             class background: IGUIBack {
