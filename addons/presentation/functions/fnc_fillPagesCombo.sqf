@@ -20,7 +20,7 @@
 params ["_listboxCtrl", "_index"];
 
 private _topic = _listboxCtrl lbValue _index;
-private _pages = (GVAR(topics) select _topic) select 2;
+private _pages = (GVAR(topics) select _topic) select 3;
 private _comboCtrl = (ctrlParent _listboxCtrl) displayCtrl IDC_COMBOBOX;
 
 lbClear _comboCtrl;

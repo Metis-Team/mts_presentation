@@ -18,7 +18,7 @@
 params [["_direction", NEXT_SLIDE, [0]]];
 TRACE_1("", _direction);
 
-(GVAR(topics) select GVAR(topic)) params ["", "_path", "_pages", "_extension"];
+(GVAR(topics) select GVAR(topic)) params ["", "_path", "_name", "_pages", "_extension"];
 
 TRACE_1("Before processing", _page);
 private _getPage = {
@@ -57,7 +57,7 @@ TRACE_2("After processing", _currentpage, _previewPage);
 
 missionNamespace setVariable [QGVAR(currentPage), _currentpage, true];
 
-private _slide = format ["%1%2%3", _path, _currentpage, _extension];
-private _previewSlide = format ["%1%2%3", _path, _previewPage, _extension];
+private _slide = format ["%1%2%3%4", _path, _name, _currentpage, _extension];
+private _previewSlide = format ["%1%2%3%4", _path, _name, _previewPage, _extension];
 
 [_slide, _previewSlide] call FUNC(setSlide);
