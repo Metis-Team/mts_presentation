@@ -24,7 +24,7 @@ CHECKRET(!(_extension in [ARR_3("ogv", "jpg", "paa")]), ERROR(format [ARR_2("Not
 
 
 //set world screens
-if 	(_extension isEqualTo "ogv") then {
+if (_extension isEqualTo "ogv") then {
     //stop any video that could currently running
     QGVAR(stopVideo) call CBA_fnc_globalEvent;
     [QGVAR(startVideo), _slide] call CBA_fnc_globalEvent;
