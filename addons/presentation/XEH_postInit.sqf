@@ -93,19 +93,19 @@ if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_
 
 
 [QGVAR(startVideo), {
-	params [["_video", "", [""]]];
+    params [["_video", "", [""]]];
 
-	CHECK(_video isEqualTo "");
+    CHECK(_video isEqualTo "");
 
     private _videoCtrl = (uiNamespace getVariable [QGVAR(videoCtrl), controlNull]);
 
     //stop any video that is currently running
     _videoCtrl ctrlSetText "";
     //create display to start the video
-	QGVAR(videoDisplay) cutRsc ["RscTitleDisplayEmpty", "PLAIN"];
-	private _videoDisplay = uiNamespace getVariable ["RscTitleDisplayEmpty", displayNull];
+    QGVAR(videoDisplay) cutRsc ["RscTitleDisplayEmpty", "PLAIN"];
+    private _videoDisplay = uiNamespace getVariable ["RscTitleDisplayEmpty", displayNull];
 
-	_videoCtrl = _videoDisplay ctrlCreate ["RscVideo", -1];
+    _videoCtrl = _videoDisplay ctrlCreate ["RscVideo", -1];
     uiNamespace setVariable [QGVAR(videoCtrl), _videoCtrl];
 
     _videoCtrl ctrlAddEventHandler ["VideoStopped", {
@@ -113,8 +113,8 @@ if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_
         QGVAR(stopVideo) call CBA_fnc_localEvent;
     }];
 
-	_videoCtrl ctrlSetPosition [10,10];
-	_videoCtrl ctrlCommit 0;
+    _videoCtrl ctrlSetPosition [10,10];
+    _videoCtrl ctrlCommit 0;
 
     {
         _x setObjectTexture [0, _video];
