@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "mts"
 pbo_name_prefix = "mts_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "LICENSE"]
+importantFiles = ["mod.cpp", "README.md", "LICENSE", "mts_presentation_logo_over_small.paa", "mts_presentation_logo_small.paa", "mts_presentation_picture.paa"]
 versionFiles = ["README.md", "mod.cpp"]
 
 ciBuild = False # Used for CI builds
