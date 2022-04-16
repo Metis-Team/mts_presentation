@@ -25,7 +25,8 @@ jobs:
 
     - name: Setup Tools
       run: |
-        C:\msys64\usr\bin\wget.exe ${{ secrets.FTP_SERVER }}/arma_tools.zip --user ${{ secrets.FTP_USERNAME }} --password ${{ secrets.FTP_PASSWORD }} -q
+        C:\msys64\usr\bin\wget.exe ${{ secrets.FTP_SERVER }}/arma_tools.zip --user ${{ secrets.FTP_USERNAME }} --password ${{ secrets.FTP_PASSWORD }}
+        ls
         Expand-Archive arma_tools.zip -DestinationPath ci
         echo "Check HEMTT: $(Test-Path .\\ci\\hemtt.exe)"
         echo "Check Binarize: $(Test-Path .\\ci\\binarize\\binarize_x64.exe)"
