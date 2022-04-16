@@ -70,7 +70,7 @@ class GVAR(dialog) {
             h = "(64 / 1080) * SafeZoneH";
             text = QPATHTOF(data\Background_nav.paa);
         };
-        class background_selection: RscPicture	{
+        class background_selection: RscPicture    {
             idc = -1;
             x = "SafeZoneX + (704 / 1920) * SafeZoneW";
             y = "SafeZoneY + (464 / 1080) * SafeZoneH";
