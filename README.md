@@ -13,7 +13,7 @@
         <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?style=flat-square" alt="Steam Workshop">
     </a>
     <a href="https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-APL--ND-red.svg?style=flat-square" alt="APL-ND License">
+        <img src="https://img.shields.io/badge/License-APL-red.svg?style=flat-square" alt="APL License">
     </a>
 </p>
  
@@ -183,7 +183,7 @@ Keybinds can be found and changed in CBA Keybinding `Options -> Controls -> Conf
 - [Become a developer](https://github.com/Metis-Team/mts_presentation/wiki/For-developers)
  
 ## License
-Metis Presentation is licensed under Arma Public License No Derivatives ([APL-ND](https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE)).
+Metis Presentation is licensed under Arma Public License No Derivatives ([APL](https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE)).
  
 ## Images
 <p align="center">
