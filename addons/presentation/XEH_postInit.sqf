@@ -11,8 +11,8 @@ TRACE_1("", GVAR(topics));
 if (isNil QGVAR(topic)) then {
     GVAR(topic) = 0;
 };
-if (isNil QGVAR(currentPage)) then {
-    GVAR(currentPage) = 1;
+if (isNil QGVAR(currentSlideNumber)) then {
+    GVAR(currentSlideNumber) = 1;
 };
 if (isNil QGVAR(presenter)) then {
     GVAR(presenter) = objNull;

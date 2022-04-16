@@ -8,7 +8,7 @@ class IGUIBack;
 class GVAR(dialog) {
     idd = IDD_MAIN_DISPLAY;
     movingEnable = 0;
-    OnLoad = QUOTE(((_this select 0) displayctrl IDC_LISTBOX) ctrlAddEventHandler [ARR_2('LBSelChanged', {_this call FUNC(fillPagesCombo); _this call FUNC(toggleContinueButton)})];);
+    OnLoad = QUOTE(((_this select 0) displayctrl IDC_LISTBOX) ctrlAddEventHandler [ARR_2('LBSelChanged', {_this call FUNC(fillSlidesCombo); _this call FUNC(toggleContinueButton)})];);
 
     class Button: RscShortcutButton {
         type = 16;
@@ -80,7 +80,7 @@ class GVAR(dialog) {
         };
     };
     class controls {
-        class combo_pages: RscCombo {
+        class combo_slides: RscCombo {
             idc = IDC_COMBOBOX;
             style = "16";
             x = "SafeZoneX + (1034 / 1920) * SafeZoneW";

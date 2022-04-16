@@ -18,19 +18,19 @@
 params [["_direction", NEXT_SLIDE, [0]]];
 TRACE_1("", _direction);
 
-(GVAR(topics) select GVAR(topic)) params ["", "_path", "_name", "_pages", "_extension"];
+(GVAR(topics) select GVAR(topic)) params ["", "_path", "_name", "_numberOfSlides", "_extension"];
 
-TRACE_1("Before processing", _page);
-private _getPage = {
-    params ["_direction", "_page"];
-    TRACE_2("getPage", _direction, _page);
+TRACE_1("Before processing", _slideNumber);
+private _getSlideNumber = {
+    params ["_direction", "_slideNumber"];
+    TRACE_2("getSlideNumber", _direction, _slideNumber);
     switch (_direction) do {
         case (NEXT_SLIDE): {
             LOG("nextSlide");
-            if (_page isEqualTo _pages) then {
-                _page = 1;
+            if (_slideNumber isEqualTo _numberOfSlides) then {
+                _slideNumber = 1;
             } else {
-                _page = _page + 1;
+                _slideNumber = _slideNumber + 1;
             };
         };
         case (SET_SLIDE): {
@@ -41,23 +41,23 @@ private _getPage = {
             [] call FUNC(setDisplay);
         };
         case (PREVIOUS_SLIDE): {
-            if (_page isEqualTo 1) then {
-                _page = _pages;
+            if (_slideNumber isEqualTo 1) then {
+                _slideNumber = _numberOfSlides;
             } else {
-                _page = _page - 1;
+                _slideNumber = _slideNumber - 1;
             };
         };
     };
-    _page
+    _slideNumber
 };
 
-private _currentpage = [_direction, GVAR(currentPage)] call _getPage;
-private _previewPage = [1, _currentpage] call _getPage;
-TRACE_2("After processing", _currentpage, _previewPage);
+private _currentSlideNumber = [_direction, GVAR(currentSlideNumber)] call _getSlideNumber;
+private _previewSlideNumber = [1, _currentSlideNumber] call _getSlideNumber;
+TRACE_2("After processing", _currentSlideNumber, _previewSlideNumber);
 
-missionNamespace setVariable [QGVAR(currentPage), _currentpage, true];
+missionNamespace setVariable [QGVAR(currentSlideNumber), _currentSlideNumber, true];
 
-private _slide = format ["%1%2%3%4", _path, _name, _currentpage, _extension];
-private _previewSlide = format ["%1%2%3%4", _path, _name, _previewPage, _extension];
+private _slide = [_path, _name, _currentSlideNumber, _extension] joinString "";
+private _previewSlide = [_path, _name, _previewSlideNumber, _extension] joinString "";
 
 [_slide, _previewSlide] call FUNC(setSlide);

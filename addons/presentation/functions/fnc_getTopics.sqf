@@ -18,20 +18,20 @@
 
 params ["_topics"];
 
-private ["_topic", "_displayName", "_path", "_name", "_pages", "_extension"];
+private ["_topic", "_displayName", "_path", "_name", "_numberOfSlides", "_extension"];
 
 for "_i" from 0 to (count _topics - 1) do {
      _topic = configName (_topics select _i);
      _displayName = getText (_topics >> _topic >> "displayName");
      _path = getText (_topics >> _topic >> "path");
      _name = getText (_topics >> _topic >> "name");
-     _pages = getNumber (_topics >> _topic >> "slides");
+     _numberOfSlides = getNumber (_topics >> _topic >> "slides");
      _extension = toLower (getText (_topics >> _topic >> "extension"));
 
      if !(_path isEqualTo "") then {
-         _path = format ["%1%2", _path, "\"];
+         _path = _path + "\";
      };
      TRACE_1("Path", _path);
 
-     GVAR(topics) pushBack [_displayName, _path, _name, _pages, _extension];
+     GVAR(topics) pushBack [_displayName, _path, _name, _numberOfSlides, _extension];
 };
