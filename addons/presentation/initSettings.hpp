@@ -1,4 +1,4 @@
-mod_name[
+[
     QGVAR(displayCurrentSlide),
     "CHECKBOX",
     [LLSTRING(cba_settings_show_current_slide), LLSTRING(cba_settings_show_current_slide_tooltip)],
@@ -62,7 +62,7 @@ mod_name[
     QGVAR(cba_settings_actions),
     "LIST",
     [LLSTRING(cba_settings_actions), LLSTRING(cba_settings_actions_tooltip)],
-    [LLSTRING(cba_category_name), LLSTRING(cba_category_name_mission_settings)],
+    [LLSTRING(mod_name), LLSTRING(cba_category_name_mission_settings)],
     [["ace_interaction","scroll_menu"],[LLSTRING(cba_settings_actions_ace_interaction), LLSTRING(cba_settings_actions_scroll_menu)],0],
     1,
     {}

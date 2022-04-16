@@ -1,5 +1,5 @@
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(nextSlide),
     LLSTRING(cba_keybinding_next_slide),
     {
@@ -14,7 +14,7 @@
 ] call CBA_fnc_addKeybind;
 
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(previousSlide),
     LLSTRING(cba_keybinding_previous_slide),
     {
@@ -29,7 +29,7 @@
 ] call CBA_fnc_addKeybind;
 
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(bigDisplay),
     LLSTRING(cba_keybinding_big_display),
     {
@@ -44,7 +44,7 @@
 ] call CBA_fnc_addKeybind;
 
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(smallDisplay),
     LLSTRING(cba_keybinding_small_display),
     {
@@ -59,7 +59,7 @@
 ] call CBA_fnc_addKeybind;
 
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(startStopVideo),
     LLSTRING(cba_keybinding_start_stop_video),
     {
@@ -78,7 +78,7 @@
 ] call CBA_fnc_addKeybind;
 
 [
-    LLSTRING(cba_category_name),
+    LLSTRING(mod_name),
     QGVAR(openPresentationMenu),
     LLSTRING(actions_presentation_menu),
     {
@@ -99,9 +99,9 @@
 →   next slide
 9   preview on/off
 7   current slide on/off
-5   choose new topic or page
-1   start/stop timer
-3   reset timer
-L   laserpointer on/off
+5   choose new topic or slideNumber
+1   start/stop timer (planned)
+3   reset timer (planned)
+L   laserpointer on/off  (planned)
 0   start/stop video
 */
