@@ -4,7 +4,7 @@
  
 <p align="center">
     <a href="https://github.com/Metis-Team/mts_presentation/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.1-blue.svg?style=flat-square" alt="Metis Presentation Version">
+        <img src="https://img.shields.io/badge/Version-1.0.2-blue.svg?style=flat-square" alt="Metis Presentation Version">
     </a>
     <a href="https://github.com/Metis-Team/mts_presentation/releases/latest">
         <img src="https://img.shields.io/github/downloads/Metis-Team/mts_presentation/total.svg?style=flat-square&label=Downloads" alt="Metis Presentation Downloads">
@@ -13,7 +13,7 @@
         <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?style=flat-square" alt="Steam Workshop">
     </a>
     <a href="https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-APL-red.svg?style=flat-square" alt="APL License">
+        <img src="https://img.shields.io/badge/License-APL--SA-red.svg?style=flat-square" alt="APL-SA License">
     </a>
 </p>
  
@@ -183,7 +183,7 @@ Keybinds can be found and changed in CBA Keybinding `Options -> Controls -> Conf
 - [Become a developer](https://github.com/Metis-Team/mts_presentation/wiki/For-developers)
  
 ## License
-Metis Presentation is licensed under Arma Public License No Derivatives ([APL](https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE)).
+Metis Presentation is licensed under Arma Public License Share Alike ([APL-SA](https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE)).
  
 ## Images
 <p align="center">
