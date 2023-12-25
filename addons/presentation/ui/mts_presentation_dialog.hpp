@@ -10,7 +10,7 @@ class GVAR(dialog) {
     movingEnable = 0;
     OnLoad = QUOTE(((_this select 0) displayctrl IDC_LISTBOX) ctrlAddEventHandler [ARR_2('LBSelChanged',{_this call FUNC(fillSlidesCombo); _this call FUNC(toggleContinueButton)})];);
 
-    class Button: RscShortcutButton {
+    class GVAR(RscShortcutButton): RscShortcutButton {
         type = 16;
         class HitZone;
         class ShortcutPos;
@@ -40,7 +40,7 @@ class GVAR(dialog) {
         animTexturePressed = QPATHTOF(data\Button_p.paa);
     };
 
-    class Listbox: RscListBox {
+    class GVAR(RscListBox): RscListBox {
         class ComboScrollBar;
 
         colorBackground[] = {0.231,0.231,0.231,1};
@@ -91,7 +91,7 @@ class GVAR(dialog) {
 
             class ComboScrollBar: RscCombo {};
         };
-        class button_start: Button {
+        class button_start: GVAR(RscShortcutButton) {
             idc = IDC_BUTTON_START;
             text = CSTRING(dialog_btn_start);
             x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
@@ -100,7 +100,7 @@ class GVAR(dialog) {
             h = "(40 / 1080) * SafeZoneH";
             onButtonClick = QUOTE(false call FUNC(startPresentation));
         };
-        class button_continue: Button {
+        class button_continue: GVAR(RscShortcutButton) {
             idc = IDC_BUTTON_CONTINUE;
             text = CSTRING(dialog_btn_continue);
             x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
@@ -109,7 +109,7 @@ class GVAR(dialog) {
             h = "(40 / 1080) * SafeZoneH";
             onButtonClick = QUOTE(true call FUNC(startPresentation));
         };
-        // class button_help: Button {
+        // class button_help: GVAR(RscShortcutButton) {
         //     idc = -1;
         //     text = "Hilfe";
         //     x = "SafeZoneX + (1034 / 1920) * SafeZoneW";
@@ -135,7 +135,7 @@ class GVAR(dialog) {
             h = "(196 / 1080) * SafeZoneH";
             text = QPATHTOF(data\lb_bg.paa);
         };
-        class listbox: Listbox {
+        class listbox: GVAR(RscListBox) {
             idc = IDC_LISTBOX;
             style = "16";
             x = "SafeZoneX + (736 / 1920) * SafeZoneW";
