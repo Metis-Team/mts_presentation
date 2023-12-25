@@ -1,0 +1,36 @@
+name = "Metis_Presentation"
+mainprefix = "z"
+prefix = "mts"
+author = "PhILoX, Timi007"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE",
+    "mts_presentation_logo_over_small.paa",
+    "mts_presentation_logo_small.paa",
+    "mts_presentation_picture.paa",
+    "meta.cpp"
+]
+
+[signing]
+authority = "mts_presentation"
+
+[version]
+path = "addons/presentation/script_version.hpp"
+git_hash = 0
+
+[asc]
+enabled = true
+exclude = [
+    "/initsettings.sqf",
+    "/initkeybinds.sqf",
+    "/xeh_prep.sqf",
+]
+
+[hemtt.config]
+preset = "Hemtt"
+
+[hemtt.release]
+folder = "Metis_Presentation"
