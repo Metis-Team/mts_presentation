@@ -16,14 +16,14 @@
  *
  */
 params [["_direction", NEXT_SLIDE, [0]]];
-TRACE_1("", _direction);
+TRACE_1("",_direction);
 
 (GVAR(topics) select GVAR(topic)) params ["", "_path", "_name", "_numberOfSlides", "_extension"];
 
-TRACE_1("Before processing", _slideNumber);
+TRACE_1("Before processing",_slideNumber);
 private _getSlideNumber = {
     params ["_direction", "_slideNumber"];
-    TRACE_2("getSlideNumber", _direction, _slideNumber);
+    TRACE_2("getSlideNumber",_direction,_slideNumber);
     switch (_direction) do {
         case (NEXT_SLIDE): {
             LOG("nextSlide");
@@ -53,7 +53,7 @@ private _getSlideNumber = {
 
 private _currentSlideNumber = [_direction, GVAR(currentSlideNumber)] call _getSlideNumber;
 private _previewSlideNumber = [1, _currentSlideNumber] call _getSlideNumber;
-TRACE_2("After processing", _currentSlideNumber, _previewSlideNumber);
+TRACE_2("After processing",_currentSlideNumber,_previewSlideNumber);
 
 missionNamespace setVariable [QGVAR(currentSlideNumber), _currentSlideNumber, true];
 

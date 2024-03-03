@@ -16,7 +16,7 @@
  *
  */
 private _status = createDialog QGVAR(dialog);
-CHECKRET(!_status, ERROR("Failed to create dialog"));
+CHECKRET(!_status,ERROR("Failed to create dialog"));
 
 private _mainDisplay = findDisplay IDD_MAIN_DISPLAY;
 private _listboxCtrl = _mainDisplay displayCtrl IDC_LISTBOX;

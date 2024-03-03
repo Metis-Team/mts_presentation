@@ -31,7 +31,7 @@ for "_i" from 0 to (count _topics - 1) do {
      if !(_path isEqualTo "") then {
          _path = _path + "\";
      };
-     TRACE_1("Path", _path);
+     TRACE_1("Path",_path);
 
      GVAR(topics) pushBack [_displayName, _path, _name, _numberOfSlides, _extension];
 };
