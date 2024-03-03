@@ -5,7 +5,7 @@ GVAR(topics) = [];
 [configfile >> QGVAR(topics)] call FUNC(getTopics);
 [missionConfigFile >> QGVAR(topics)] call FUNC(getTopics);
 
-TRACE_1("", GVAR(topics));
+TRACE_1("",GVAR(topics));
 
 //set default values
 if (isNil QGVAR(topic)) then {
@@ -30,7 +30,7 @@ private "_screen";
 GVAR(screens) = [];
 {
     _screen = missionNamespace getVariable [_x, objNull];
-    TRACE_2("Screen", _screen, getObjectTextures _screen);
+    TRACE_2("Screen",_screen,getObjectTextures _screen);
 
     if (isNull _screen) then {continue;};
 
@@ -39,7 +39,7 @@ GVAR(screens) = [];
     };
 } forEach _screens;
 
-TRACE_2("CBA Screens", _screens, GVAR(screens));
+TRACE_2("CBA Screens",_screens,GVAR(screens));
 
 private _controls = (GVAR(cba_settings_controls) call CBA_fnc_removeWhitespace) splitString ",";
 
@@ -53,7 +53,7 @@ GVAR(controls) = [];
     };
 } forEach _controls;
 
-TRACE_2("CBA Controls", _controls, GVAR(controls));
+TRACE_2("CBA Controls",_controls,GVAR(controls));
 
 //add actions to controls
 if (GVAR(cba_settings_actions) isEqualTo "ace_interaction" && GVAR(ace_interact_menu_loaded)) then {

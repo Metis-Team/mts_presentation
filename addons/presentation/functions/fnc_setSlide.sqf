@@ -17,10 +17,10 @@
  *
  */
 params [["_slide", "", [""]], ["_previewSlide", "", [""]]];
-TRACE_2("", _slide, _previewSlide);
+TRACE_2("",_slide,_previewSlide);
 
 private _extension = _slide select [(count _slide) - 3 , 3];
-CHECKRET(!(_extension in [ARR_3("ogv", "jpg", "paa")]), ERROR(format [ARR_2("Not supported media format: %1", _extension)]));
+CHECKRET(!(_extension in [ARR_3("ogv","jpg","paa")]),ERROR_1("Not supported media format: %1",_extension));
 
 
 //set world screens
@@ -44,7 +44,7 @@ if (GVAR(previewNextSlide) && !GVAR(disablePreview)) then {
     _displayData pushBack [((uiNamespace getVariable [QGVAR(previewNextSlideDisp), displayNull]) displayCtrl IDC_DISPLAY_PICTURE), _previewSlide];
 };
 
-TRACE_1("", _displayData);
+TRACE_1("",_displayData);
 {
     (_x select 0) ctrlSetText (_x select 1);
 } forEach _displayData;

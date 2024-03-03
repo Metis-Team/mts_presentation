@@ -31,7 +31,7 @@ if (GVAR(displayCurrentSlide)) then {
     };
     private _bgCtrl = _curSlideDisp displayCtrl IDC_DISPLAY_BACKGROUND;
     private _slideCtrl = _curSlideDisp displayCtrl IDC_DISPLAY_PICTURE;
-    TRACE_3("displayCurrentSlide", _curSlideDisp, _bgCtrl, _slideCtrl);
+    TRACE_3("displayCurrentSlide",_curSlideDisp,_bgCtrl,_slideCtrl);
 
     if (_displaySize isEqualTo "small") then {
         //small display
@@ -73,7 +73,7 @@ if (GVAR(previewNextSlide) && !GVAR(disablePreview)) then {
     private _slideCtrl = _previewNextSlideDisp displayCtrl IDC_DISPLAY_PICTURE;
     private _previewLblCtrl = _previewNextSlideDisp displayCtrl IDC_DISPLAY_PREVIEW_LABEL;
     private _previewBgLblCtrl = _previewNextSlideDisp displayCtrl IDC_DISPLAY_PREVIEW_BACKGROUND_LABEL;
-    TRACE_5("previewNextSlide", _previewNextSlideDisp, _bgCtrl, _slideCtrl, _previewLblCtrl, _previewBgLblCtrl);
+    TRACE_5("previewNextSlide",_previewNextSlideDisp,_bgCtrl,_slideCtrl,_previewLblCtrl,_previewBgLblCtrl);
 
     if (GVAR(displayCurrentSlide)) then {
         if (_displaySize isEqualTo "small") then {
@@ -113,7 +113,7 @@ if (GVAR(previewNextSlide) && !GVAR(disablePreview)) then {
     };
 };
 
-TRACE_1("", _displayData);
+TRACE_1("",_displayData);
 {
     _x params ["_ctrl", "_pos"];
 

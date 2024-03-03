@@ -18,7 +18,7 @@
  *
  */
 params [["_continue", false, [false]], ["_topic", -1, [0]], ["_slideNumber", 1, [0]]];
-TRACE_3("Before processing", _continue, _topic, _slideNumber);
+TRACE_3("Before processing",_continue,_topic,_slideNumber);
 
 scopeName "function";
 
@@ -77,7 +77,7 @@ if (!_continue) then {
         breakOut "function";
     };
 };
-TRACE_3("After processing", _continue, _topic, _slideNumber);
+TRACE_3("After processing",_continue,_topic,_slideNumber);
 
 SET_SLIDE call FUNC(changeSlide);
 
