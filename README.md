@@ -4,13 +4,13 @@
  
 <p align="center">
     <a href="https://github.com/Metis-Team/mts_presentation/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.3-blue.svg?style=flat-square" alt="Metis Presentation Version">
+        <img src="https://img.shields.io/github/v/release/Metis-Team/mts_presentation?label=Version&style=flat-square" alt="Metis Presentation Version">
     </a>
     <a href="https://github.com/Metis-Team/mts_presentation/releases/latest">
-        <img src="https://img.shields.io/github/downloads/Metis-Team/mts_presentation/total.svg?style=flat-square&label=Downloads" alt="Metis Presentation Downloads">
+        <img src="https://img.shields.io/github/downloads/Metis-Team/mts_presentation/total.svg?label=Downloads&logo=Github&style=flat-square" alt="Metis Presentation Downloads">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2795312040">
-        <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?style=flat-square" alt="Steam Workshop">
+        <img src="https://img.shields.io/badge/Steam-Workshop-green.svg?logo=Steam&style=flat-square" alt="Steam Workshop">
     </a>
     <a href="https://github.com/Metis-Team/mts_presentation/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-APL--SA-red.svg?style=flat-square" alt="APL-SA License">
